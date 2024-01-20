@@ -1,7 +1,7 @@
 resource "yandex_vpc_address" "pip" {
   count = var.create_pip ? 1 : 0
 
-  name        = format("%s-alb", var.name)
+  name        = format("%s-pip", var.name)
   description = ""
   folder_id   = var.folder_id
   labels      = var.labels
